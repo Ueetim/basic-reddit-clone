@@ -1,0 +1,15 @@
+<form action="">
+  <h3>Add a Link</h3>
+
+  <div class="field">
+    <label for="title">Title</label>
+    <input type="text" name="" id="title" #newtitle>
+  </div>
+
+  <div class="field">
+    <label for="link">Link</label>
+    <input type="text" name="" id="link" #newlink>
+  </div>
+
+  <button (click)="addArticle(newtitle, newlink)">Submit link</button>
+</form>

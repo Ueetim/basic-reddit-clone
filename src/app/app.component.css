@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    background-color: #d5f8f8;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+form h3 {
+    margin-bottom: 20px;
+}
+
+form .field {
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+form input {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+form button {
+    height: 35px;
+    width: 120px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
