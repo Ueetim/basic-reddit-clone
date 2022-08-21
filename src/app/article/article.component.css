@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.row {
+    margin: auto;
+    width: max-content;
+    margin-top: 20px;
+}
+
 .article {
     /* width: 300px; */
     display: flex;

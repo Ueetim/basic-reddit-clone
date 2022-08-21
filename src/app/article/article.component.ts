@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostBinding, OnInit } from '@angular/core';
+import { Article } from './article.model';
 
 @Component({
   selector: 'app-article',
@@ -6,8 +7,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./article.component.css']
 })
 export class ArticleComponent implements OnInit {
+  @HostBinding('attr.class') cssClass = 'row'; //used to style the parent element
+  
+  article: Article;
 
-  constructor() { }
+  constructor() {
+    this.article = new Article(
+      'Angular',
+      'http://angular.io',
+      10
+    );
+  }
+
+  voteUp(): boolean {
+    this.article.voteUp();
+    return false; //return false prevents browser reloa on click of link
+  }
+
+  voteDown(): boolean {
+    this.article.voteDown();
+    return false; //return false prevents browser reloa on click of link
+  }
 
   ngOnInit(): void {
   }
