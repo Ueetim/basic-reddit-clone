@@ -12,6 +12,8 @@
             <div class="title">
                 <a href="{{ article.link }}">{{ article.title }}</a>
             </div>
+            <div class="meta">({{ article.domain() }})</div>
+            
             
             <ul>
                 <li><a href="#" (click)="voteUp()">&uarr; upvote</a></li>

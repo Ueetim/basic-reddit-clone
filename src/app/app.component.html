@@ -14,4 +14,6 @@
   <button (click)="addArticle(newtitle, newlink)">Submit link</button>
 </form>
 
-<app-article></app-article>
+<div class="">
+  <app-article *ngFor="let article of articles" [article]="article"></app-article>
+</div>
